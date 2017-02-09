@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwei.shop_php_yii2.base.activity.MainActivity">
+
+  <!--加载头部-->
+    <include
+        android:id="in_main_title"
+        layout="@layout/activity_title"></include>
+    <!--加载中间区域-->
+    <FrameLayout
+        android:layout_below="@+id/in_main_title"
+        android:id="@+id/fram_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_main_buttom">
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll_main_buttom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_51"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="#929292"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:background="#000000"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_main_buttom_tea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="月光茶人"
+                android:drawableTop="@drawable/main_tea_selector"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_main_buttom_favorable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="优惠"
+                android:drawableTop="@drawable/main_favorable_selector"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_main_buttom_shop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="购物车"
+                android:drawableTop="@drawable/main_shop_selector"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_main_buttom_my"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="我的"
+                android:drawableTop="@drawable/main_my_selector"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
